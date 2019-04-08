@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+capnp compile -ocapnp \
+		-I $GOPATH/src/github.com/tpukep/caps/vendor/github.com/glycerine/go-capnproto \
+		-I $GOPATH/src/github.com/tpukep $1 > .$1.new
+mv .$1.new $1

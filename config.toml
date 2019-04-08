@@ -1,0 +1,29 @@
+[beam]
+pprof = false
+listen = ":29999"
+
+[session]
+nocomp = false
+smuxbuf = 0
+keepalive = 0
+
+[kcp]
+acknodelay = false
+nodelay = 0
+resend = 0
+nc = 0
+interval = 0
+sndwnd = 0
+rcvwnd = 0
+mode = "fast"
+
+[crypt]
+datashard = 0
+parityshard = 0
+key = ""
+crypt = "aes"
+
+[udp]
+dscp = 0
+mtu = 0
+sockbuf = 0
